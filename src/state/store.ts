@@ -40,8 +40,6 @@ type State = {
   undoStack: HistoryEntry[];
   redoStack: HistoryEntry[];
   selection: Selection;
-  dialogPanelId: string | null;
-  dialogTab: string;
   /** The panel open in the slide-out simplified builder, if any. */
   builderPanelId: string | null;
   /** which half of the builder is showing: the panel's own geometry, or its additional features */
@@ -65,14 +63,11 @@ type State = {
   undo: () => void;
   redo: () => void;
   select: (s: Partial<Selection>) => void;
-  openPanelDialog: (panelId: string, tab?: string) => void;
-  closePanelDialog: () => void;
   openBuilder: (panelId: string, section?: "geometry" | "features", pick?: { k: string; id?: string } | null) => void;
   setBuilderSection: (section: "geometry" | "features") => void;
   closeBuilder: () => void;
   openFoilPicker: (panelId: string, target: "root" | "tip") => void;
   closeFoilPicker: () => void;
-  setDialogTab: (t: string) => void;
   replaceDoc: (doc: ProjectDoc, label: string) => void;
   /** The project was just written to a file: nothing is unexported any more. */
   markExported: () => void;
@@ -96,8 +91,6 @@ export const useStore = create<State>((set, get) => ({
   undoStack: [],
   redoStack: [],
   selection: { panelId: null, sparId: null, ribId: null },
-  dialogPanelId: null,
-  dialogTab: "base",
   builderPanelId: null,
   builderSection: "geometry",
   builderPick: null,
@@ -162,12 +155,6 @@ export const useStore = create<State>((set, get) => ({
   select(s) {
     set({ selection: { ...get().selection, ...s } });
   },
-  openPanelDialog(panelId, tab = "base") {
-    set({ dialogPanelId: panelId, dialogTab: tab, selection: { ...get().selection, panelId } });
-  },
-  closePanelDialog() {
-    set({ dialogPanelId: null });
-  },
   openBuilder(panelId, section = "geometry", pick = null) {
     set({ builderPanelId: panelId, builderSection: section, builderPick: pick ? { ...pick } : null, selection: { panelId, sparId: null, ribId: null } });
   },
@@ -182,9 +169,6 @@ export const useStore = create<State>((set, get) => ({
   },
   closeFoilPicker() {
     set({ foilPicker: null });
-  },
-  setDialogTab(t) {
-    set({ dialogTab: t });
   },
   replaceDoc(doc, _label) {
     syncAirfoilLinks(doc);

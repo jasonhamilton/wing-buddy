@@ -1054,8 +1054,8 @@ export function Viewport3D({
       <div className="flex h-full w-full flex-col items-center justify-center gap-3 bg-viewport p-8 text-center">
         <strong className="text-sm font-medium text-fg">This browser cannot draw the 3D view</strong>
         <p className="max-w-sm text-xs text-muted">
-          WebGL is unavailable or switched off. Everything else still works: the Planform tab, the rib preview
-          in the panel dialog, and both exports all read from the same geometry.
+          WebGL is unavailable or switched off. Everything else still works: the panel list, the rib preview
+          in the builder, and both exports all read from the same geometry.
         </p>
       </div>
     );

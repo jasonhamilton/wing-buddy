@@ -16,7 +16,7 @@ import { CloseUp, type View, type Window } from "./CloseUp";
 import { Editable, Value } from "./Editable";
 import { useFeatureRibs } from "./FeatureCard";
 import { Advanced, Choice, ColourDot, colourOf, dragStepFor, Frame, LenValue, MeasureValue, Row, Section, TypePicker } from "./detailParts";
-import { AileronFields } from "./PanelDialog";
+import { AileronFields } from "./AileronFields";
 import { affectedRibs, isNotch } from "./panelFeatures";
 import { PlanformDrawing } from "./PlanformDrawing";
 

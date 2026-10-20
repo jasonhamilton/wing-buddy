@@ -32,12 +32,16 @@ await step("02-cross-section", async () => {
 await page.getByRole("button", { name: /Cross Section View|3D View|Back/ }).first().click().catch(() => {});
 await wait(500);
 
+// The panel builder: geometry first, then the features and their details.
 await page.getByRole("button", { name: "Edit Inboard panel" }).click();
+await wait(1200);
+await shot("03-builder-geometry");
+await page.getByRole("button", { name: "Features", exact: true }).click();
 await wait(900);
-await shot("03-panel-base");
-for (const [tab, name] of [["Ribs", "04-panel-ribs"], ["Spars", "05-panel-spars"], ["Leading Edge", "06-panel-leading-edge"], ["Sheeting", "07-panel-sheeting"]]) {
-  await step(name, async () => { await page.getByRole("tab", { name: tab }).click(); });
-}
+await shot("04-builder-features");
+await step("06-add-feature", async () => {
+  await page.getByRole("navigation", { name: "Features" }).getByRole("button", { name: "Add a feature" }).click();
+});
 await closeDlg();
 
 await step("09-export-dxf", async () => {

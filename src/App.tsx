@@ -14,7 +14,6 @@ import { MenuBar, modKey, type MenuEntry } from "./ui/MenuBar";
 import { clearLocal } from "./io/localStore";
 import { AirfoilLibraryDialog } from "./ui/screens/AirfoilLibrary";
 import { ExportDxfDialog, ExportPdfDialog, ExportScadDialog } from "./ui/screens/ExportDialogs";
-import { PanelDialog } from "./ui/screens/PanelDialog";
 import { PlaneDefinition } from "./ui/screens/PlaneDefinition";
 import { SamplePlansDialog } from "./ui/SamplePlansDialog";
 import { StatusBar } from "./ui/StatusBar";
@@ -22,7 +21,7 @@ import { Toasts, useToasts } from "./ui/Toasts";
 
 export default function App() {
   const store = useStore();
-  const { doc, dirty, dialogPanelId, undoStack, redoStack } = store;
+  const { doc, dirty, undoStack, redoStack } = store;
   const [exporting, setExporting] = useState<null | "pdf" | "dxf" | "scad">(null);
   const [confirmingNew, setConfirmingNew] = useState(false);
   const [browsingSamples, setBrowsingSamples] = useState(false);
@@ -216,8 +215,7 @@ export default function App() {
     },
   ];
 
-  const panel = doc.wing.panels.find((p) => p.id === dialogPanelId) ?? null;
-  const modalOpen = panel !== null || store.foilPicker !== null || exporting !== null || confirmingNew || browsingSamples || pendingLoad !== null;
+  const modalOpen = store.foilPicker !== null || exporting !== null || confirmingNew || browsingSamples || pendingLoad !== null;
 
   return (
     <div className="flex h-full flex-col bg-bg text-fg">
@@ -243,7 +241,6 @@ export default function App() {
       <StatusBar />
       </div>
 
-      {panel && <PanelDialog panel={panel} onImportAirfoil={(target) => void onImportFoil({ panelId: panel.id, target })} />}
       {store.foilPicker && <AirfoilLibraryDialog onImport={() => void onImportFoil()} />}
       {exporting === "pdf" && <ExportPdfDialog onClose={() => setExporting(null)} />}
       {exporting === "dxf" && <ExportDxfDialog onClose={() => setExporting(null)} />}

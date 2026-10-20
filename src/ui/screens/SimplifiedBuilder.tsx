@@ -16,7 +16,7 @@ import { formatLength } from "../../domain/units";
 import { panelSections } from "../../geometry";
 import { fitRodDiameterMm, wedgeAngleDeg, wedgeHeightMm } from "../../geometry/edgeStock";
 import { ops, useStore } from "../../state/store";
-import { Button, IconButton, type MenuItem } from "../primitives";
+import { IconButton, type MenuItem } from "../primitives";
 import { AddFeatureDialog, type EdgeShape, type SparVariant } from "./AddFeatureDialog";
 import { Panel2D, RibView } from "../viewport/Canvas2D";
 import { EdgeDetail } from "./EdgeDetails";
@@ -47,7 +47,7 @@ const CHEVRON = (
 /* ----------------------------------------------------------------- builder */
 
 export function SimplifiedBuilder({ panel }: { panel: Panel }) {
-  const { geometry, selection, select, closeBuilder, openPanelDialog, doc, builderSection: section, setBuilderSection, builderPick } = useStore();
+  const { geometry, selection, select, closeBuilder, doc, builderSection: section, setBuilderSection, builderPick } = useStore();
   const [picked, setPicked] = useState<Pick | null>((builderPick as Pick | null) ?? null);
   // opened from a feature's preview on the panel card: that feature is the one to show
   useEffect(() => {
@@ -405,9 +405,6 @@ export function SimplifiedBuilder({ panel }: { panel: Panel }) {
             </button>
           ))}
         </div>
-        <Button size="sm" onClick={() => openPanelDialog(panel.id)}>
-          Open the full editor
-        </Button>
       </header>
 
       {/* ----------------------------------------------------- features + detail */}

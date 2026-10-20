@@ -24,17 +24,15 @@ Define a wing panel by panel. Every change rebuilds the 3D model and the ribs im
 
 ## Screenshots
 
-### Panel definition
+### Panel builder
 
-Each panel opens into a dialog with a live rib preview. Ribs, spars, edges, sheeting and construction details each have their own tab.
+Click a panel to open its builder. **Wing geometry** holds the airfoils, planform, twist and rib layout, with a live 3D rib view. **Features** lists everything built into the panel (spars, joiners, edge stock, sheeting, combs, lightening holes and more), each with its first and last rib drawn, and a rib preview underneath.
 
-| Ribs | Spars |
+| Wing geometry | Features |
 | --- | --- |
-| ![Rib distribution, thickness and building tabs](docs/screenshots/04-panel-ribs.png) | ![Spar list and spar data](docs/screenshots/05-panel-spars.png) |
+| ![Wing geometry: airfoils, planform and rib layout](docs/screenshots/03-builder-geometry.png) | ![Features list with first and last rib of each feature](docs/screenshots/04-builder-features.png) |
 
-| Leading edge | Sheeting |
-| --- | --- |
-| ![Leading edge settings](docs/screenshots/06-panel-leading-edge.png) | ![Sheeting strips](docs/screenshots/07-panel-sheeting.png) |
+![Add a feature: spar, webbing, notch, aileron cutter, joiner, edge stock, sheeting, rib comb, building tabs and lightening holes](docs/screenshots/06-add-feature.png)
 
 ### Cross-section view
 
@@ -64,8 +62,7 @@ To work on the code:
 ```sh
 npm install
 npm run dev        # http://localhost:3000
-npm test           # unit tests (vitest)
-npm run test:e2e   # browser tests (playwright)
+npm test           # unit tests
 npm run build      # production build in dist/
 ```
 

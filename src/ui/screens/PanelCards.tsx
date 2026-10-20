@@ -335,7 +335,7 @@ function PanelCard(c: CardProps) {
 /* -------------------------------------------------------------------- list */
 
 export function PanelList() {
-  const { doc, selection, select, openPanelDialog, openBuilder, builderPanelId } = useStore();
+  const { doc, selection, select, openBuilder, builderPanelId } = useStore();
   const units = doc.displayUnits;
   const panels = doc.wing.panels;
   const selected = selection.panelId ?? panels[0]?.id ?? null;
@@ -474,7 +474,7 @@ export function PanelList() {
                   else cardRefs.current.delete(p.id);
                 }}
                 onSelect={() => select({ panelId: p.id, sparId: null, ribId: null })}
-                onOpen={() => openPanelDialog(p.id)}
+                onOpen={() => openBuilder(p.id)}
                 onBuild={(section, pick) => openBuilder(p.id, section, pick)}
                 dimmed={builderPanelId !== null && builderPanelId !== p.id}
                 onDelete={() => setConfirmId(p.id)}

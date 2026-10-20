@@ -2,7 +2,7 @@ import { defineConfig, mergeConfig } from "vitest/config";
 import viteConfig from "./vite.config";
 
 /**
- * Vitest owns `src/**`; Playwright owns `e2e/**`. Kept in its own file because
+ * Vitest owns `src/**`. Kept in its own file because
  * vite's own config type does not carry a `test` key — putting it there
  * typechecks only by accident.
  */
@@ -11,7 +11,7 @@ export default mergeConfig(
   defineConfig({
     test: {
       include: ["src/**/*.{test,spec}.{ts,tsx}"],
-      exclude: ["e2e/**", "node_modules/**", "dist/**"],
+      exclude: ["node_modules/**", "dist/**"],
     },
   }),
 );
