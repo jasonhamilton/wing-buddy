@@ -1,0 +1,27 @@
+name: Release
+
+# Push a tag like v0.1.0 to publish a downloadable build (unzip and open index.html through any static server).
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+      - run: cd dist && zip -r ../wing-buddy-${{ github.ref_name }}.zip .
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: wing-buddy-${{ github.ref_name }}.zip
+          generate_release_notes: true

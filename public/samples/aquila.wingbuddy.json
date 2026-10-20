@@ -1,0 +1,474 @@
+{
+  "schemaVersion": 1,
+  "id": "c3488e89-fd94-44e8-aed9-fe65d9e2b7d6",
+  "name": "plan-library/outerzone.co.uk/5136-aquila (Airtronics Aquila, plan 92061701 sheet",
+  "displayUnits": "mm",
+  "wing": {
+    "panels": [
+      {
+        "id": "c2e5f4c4-6e73-4078-9f11-0a890e956b6c",
+        "name": "Centre panel",
+        "lengthMm": 772.16,
+        "rootChordMm": 228.6,
+        "tipChordMm": 228.6,
+        "sweepMm": 0,
+        "rootTwistDeg": 0,
+        "tipTwistDeg": 0,
+        "straightTE": false,
+        "dihedralDeg": 4,
+        "dihedralTipDeg": null,
+        "startAtMm": null,
+        "rootAirfoilId": "naca-2412",
+        "rootAirfoilScale": 1,
+        "tipAirfoilId": null,
+        "tipAirfoilScale": 1,
+        "airfoilLinkedToPrev": false,
+        "noseSmoothing": {
+          "enabled": false,
+          "extentPct": 8
+        },
+        "ribAlign": "none",
+        "ribThicknessMm": 1.5875,
+        "ribCountTarget": 12,
+        "ribsManuallyEdited": true,
+        "halfRibCutPct": 35,
+        "ribs": [
+          {
+            "id": "cac2d9c6-185f-4c02-b8ea-e936e33fca82",
+            "positionMm": 0,
+            "thicknessMm": 3.175,
+            "half": null
+          },
+          {
+            "id": "bfc78c3b-ff1e-4ec9-ba17-9336da7323bc",
+            "positionMm": 70.1964,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "df45f6f5-a341-4205-bf55-8ba46a010d6a",
+            "positionMm": 140.3927,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "6fae2b3a-6e94-45ef-a2f3-3c8d585fa70f",
+            "positionMm": 210.5891,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "80dc5f3b-af25-4647-98a2-8678526f1a2c",
+            "positionMm": 280.7855,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "039ad2de-6772-4c1a-9ba0-b2aa191130e3",
+            "positionMm": 350.9818,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "a7c7cf2c-32c2-4e31-aaac-85e33b0a56b4",
+            "positionMm": 421.1782,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "b6d82042-9317-4bf7-8290-d4c3c42584b8",
+            "positionMm": 491.3745,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "d7d13666-af0b-48f8-a81b-c42ba2800880",
+            "positionMm": 561.5709,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "58544d6e-1964-4e1d-8855-e3661dc8d825",
+            "positionMm": 631.7673,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "63bcf13c-8110-4f69-b659-4ddbcaa6b3d1",
+            "positionMm": 701.9636,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "252efe75-7263-4dc8-abdb-13f823d7a08f",
+            "positionMm": 772.16,
+            "thicknessMm": 4.762499999999999,
+            "half": null
+          }
+        ],
+        "spars": [
+          {
+            "id": "c8db4d0b-3a1e-45ec-8ae7-2aaf374e6cfb",
+            "name": "Spruce spar caps (top and bottom notches)",
+            "type": "rectangle",
+            "color": "standard",
+            "spanStartMm": 0,
+            "spanEndMm": 772.16,
+            "distanceFrom": "LE",
+            "distance": {
+              "start": {
+                "value": 30,
+                "unit": "pct"
+              },
+              "end": null
+            },
+            "angleDeg": null,
+            "followLE": false,
+            "width": {
+              "start": 6.35,
+              "end": null
+            },
+            "height": {
+              "start": 3.175,
+              "end": null
+            },
+            "autoAdjustWidth": false,
+            "realWidth": false,
+            "verticalCut": false,
+            "flat": false,
+            "radiusMm": null,
+            "offsetY": null,
+            "gapForeMm": 0,
+            "gapAftMm": 0,
+            "positionTop": true,
+            "positionBottom": true,
+            "webbing": null,
+            "aileron": null
+          }
+        ],
+        "buildingTabs": {
+          "enabled": false,
+          "above": false,
+          "below": true,
+          "fore": true,
+          "aft": true,
+          "holes": false,
+          "fromLE": {
+            "value": 5,
+            "unit": "mm"
+          },
+          "fromTE": {
+            "value": 45,
+            "unit": "mm"
+          },
+          "widthLE": 15,
+          "widthTE": 15,
+          "extendMm": 5.5,
+          "sidesMm": 2.5,
+          "endsMm": 2.5
+        },
+        "leadingEdge": {
+          "enabled": true,
+          "widthMm": 6.35,
+          "heightMm": 14.5,
+          "shape": "rectangle"
+        },
+        "trailingEdge": {
+          "enabled": true,
+          "widthMm": 25.4,
+          "heightMm": 11.5,
+          "shape": "triangle"
+        },
+        "sheeting": {
+          "type": "advanced",
+          "standardLength": null,
+          "standardThicknessMm": null,
+          "strips": [
+            {
+              "id": "30813c35-a1d6-4de0-9734-a0ea876f3d16",
+              "name": "LE sheet top and bottom",
+              "color": "standard",
+              "spanStartMm": 0,
+              "spanEndMm": 772.16,
+              "startingAt": "LE",
+              "capStrip": false,
+              "distance": {
+                "start": {
+                  "value": 0,
+                  "unit": "pct"
+                },
+                "end": null
+              },
+              "length": {
+                "start": {
+                  "value": 30,
+                  "unit": "pct"
+                },
+                "end": null
+              },
+              "thicknessMm": 1.5875,
+              "applyAbove": true,
+              "applyBelow": true
+            },
+            {
+              "id": "f7271e31-67aa-48f0-b838-3ba435a9e6d1",
+              "name": "Rear top sheet",
+              "color": "standard",
+              "spanStartMm": 0,
+              "spanEndMm": 772.16,
+              "startingAt": "LE",
+              "capStrip": false,
+              "distance": {
+                "start": {
+                  "value": 30,
+                  "unit": "pct"
+                },
+                "end": null
+              },
+              "length": {
+                "start": {
+                  "value": 65,
+                  "unit": "pct"
+                },
+                "end": null
+              },
+              "thicknessMm": 1.5875,
+              "applyAbove": true,
+              "applyBelow": false
+            }
+          ]
+        },
+        "ribCombs": [],
+        "lighteningHoles": {
+          "type": "none",
+          "minDistanceMm": 5,
+          "minDistanceFromLEMm": 5,
+          "minDistanceFromTEMm": 5,
+          "distanceFromEdgeMm": 2,
+          "minWidthMm": 10,
+          "maxWidthMm": 40,
+          "supportWidthMm": 4,
+          "roundCorners": true,
+          "roundnessPct": 20,
+          "smoothnessPoints": 4
+        }
+      },
+      {
+        "id": "ebf83de4-b0b5-4366-a09c-3d4a1a1893fd",
+        "name": "Outer panel",
+        "lengthMm": 452.12,
+        "rootChordMm": 228.6,
+        "tipChordMm": 162.56,
+        "sweepMm": 15.239999999999998,
+        "rootTwistDeg": 0,
+        "tipTwistDeg": 0,
+        "straightTE": false,
+        "dihedralDeg": 8,
+        "dihedralTipDeg": null,
+        "startAtMm": null,
+        "rootAirfoilId": "naca-2412",
+        "rootAirfoilScale": 1,
+        "tipAirfoilId": null,
+        "tipAirfoilScale": 1,
+        "airfoilLinkedToPrev": false,
+        "noseSmoothing": {
+          "enabled": false,
+          "extentPct": 8
+        },
+        "ribAlign": "none",
+        "ribThicknessMm": 1.5875,
+        "ribCountTarget": 7,
+        "ribsManuallyEdited": true,
+        "halfRibCutPct": 35,
+        "ribs": [
+          {
+            "id": "93ea57d8-7881-4d3c-bcda-61f28a10a52d",
+            "positionMm": 75.3533,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "f6aa80f3-25d8-4e22-bc56-781f9df31799",
+            "positionMm": 150.7067,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "7a0da52b-cc98-4b41-b3e9-ad9f2b6a5737",
+            "positionMm": 226.06,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "c2ae0ea7-84d6-44c0-8240-1ed7c5caf603",
+            "positionMm": 301.4133,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "9ce76880-b054-44f4-aed6-6f8d43685047",
+            "positionMm": 376.7667,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "99ddd9e8-b241-44eb-951d-f8bc52636bc1",
+            "positionMm": 452.12,
+            "thicknessMm": 1.5875,
+            "half": null
+          }
+        ],
+        "spars": [
+          {
+            "id": "ff347f59-b6dd-45d3-b331-7873a333e5cf",
+            "name": "Spruce spar caps (top and bottom notches)",
+            "type": "rectangle",
+            "color": "standard",
+            "spanStartMm": 0,
+            "spanEndMm": 452.12,
+            "distanceFrom": "LE",
+            "distance": {
+              "start": {
+                "value": 30,
+                "unit": "pct"
+              },
+              "end": null
+            },
+            "angleDeg": null,
+            "followLE": false,
+            "width": {
+              "start": 6.35,
+              "end": null
+            },
+            "height": {
+              "start": 3.175,
+              "end": null
+            },
+            "autoAdjustWidth": false,
+            "realWidth": false,
+            "verticalCut": false,
+            "flat": false,
+            "radiusMm": null,
+            "offsetY": null,
+            "gapForeMm": 0,
+            "gapAftMm": 0,
+            "positionTop": true,
+            "positionBottom": true,
+            "webbing": null,
+            "aileron": null
+          }
+        ],
+        "buildingTabs": {
+          "enabled": false,
+          "above": false,
+          "below": true,
+          "fore": true,
+          "aft": true,
+          "holes": false,
+          "fromLE": {
+            "value": 5,
+            "unit": "mm"
+          },
+          "fromTE": {
+            "value": 45,
+            "unit": "mm"
+          },
+          "widthLE": 15,
+          "widthTE": 15,
+          "extendMm": 5.5,
+          "sidesMm": 2.5,
+          "endsMm": 2.5
+        },
+        "leadingEdge": {
+          "enabled": true,
+          "widthMm": 6.35,
+          "heightMm": 14.5,
+          "shape": "rectangle"
+        },
+        "trailingEdge": {
+          "enabled": false,
+          "widthMm": 14,
+          "heightMm": 8,
+          "shape": "triangle"
+        },
+        "sheeting": {
+          "type": "advanced",
+          "standardLength": null,
+          "standardThicknessMm": null,
+          "strips": [
+            {
+              "id": "b731b2b9-cd0c-40c2-bcb3-b6ea5e97c440",
+              "name": "LE sheet top and bottom",
+              "color": "standard",
+              "spanStartMm": 0,
+              "spanEndMm": 452.12,
+              "startingAt": "LE",
+              "capStrip": false,
+              "distance": {
+                "start": {
+                  "value": 0,
+                  "unit": "pct"
+                },
+                "end": null
+              },
+              "length": {
+                "start": {
+                  "value": 30,
+                  "unit": "pct"
+                },
+                "end": null
+              },
+              "thicknessMm": 1.5875,
+              "applyAbove": true,
+              "applyBelow": true
+            },
+            {
+              "id": "505a5906-0a0a-4a03-b848-88a1612cae4c",
+              "name": "Rear top sheet",
+              "color": "standard",
+              "spanStartMm": 0,
+              "spanEndMm": 452.12,
+              "startingAt": "LE",
+              "capStrip": false,
+              "distance": {
+                "start": {
+                  "value": 30,
+                  "unit": "pct"
+                },
+                "end": null
+              },
+              "length": {
+                "start": {
+                  "value": 65,
+                  "unit": "pct"
+                },
+                "end": null
+              },
+              "thicknessMm": 1.5875,
+              "applyAbove": true,
+              "applyBelow": false
+            }
+          ]
+        },
+        "ribCombs": [],
+        "lighteningHoles": {
+          "type": "none",
+          "minDistanceMm": 5,
+          "minDistanceFromLEMm": 5,
+          "minDistanceFromTEMm": 5,
+          "distanceFromEdgeMm": 2,
+          "minWidthMm": 10,
+          "maxWidthMm": 40,
+          "supportWidthMm": 4,
+          "roundCorners": true,
+          "roundnessPct": 20,
+          "smoothnessPoints": 4
+        }
+      }
+    ],
+    "wingHalvesDistanceMm": 66.03999999999999
+  },
+  "airfoils": [],
+  "createdAt": "2026-10-08T18:15:16.887Z",
+  "updatedAt": "2026-10-08T18:15:16.887Z"
+}

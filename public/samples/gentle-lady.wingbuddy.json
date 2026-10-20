@@ -1,0 +1,542 @@
+{
+  "schemaVersion": 1,
+  "id": "0bce036b-c267-48df-887c-00e025427fad",
+  "name": "plan-library/outerzone.co.uk/2359-gentle-lady (Carl Goldberg Gentle Lady, kit SP",
+  "displayUnits": "mm",
+  "wing": {
+    "panels": [
+      {
+        "id": "117f0db6-6012-4e36-9fdd-6bc01a195a5a",
+        "name": "Inboard panel",
+        "lengthMm": 525.78,
+        "rootChordMm": 226.06,
+        "tipChordMm": 226.06,
+        "sweepMm": 0,
+        "rootTwistDeg": 0,
+        "tipTwistDeg": 0,
+        "straightTE": false,
+        "dihedralDeg": 3.5,
+        "dihedralTipDeg": null,
+        "startAtMm": null,
+        "rootAirfoilId": "naca-2412",
+        "rootAirfoilScale": 1,
+        "tipAirfoilId": null,
+        "tipAirfoilScale": 1,
+        "airfoilLinkedToPrev": false,
+        "noseSmoothing": {
+          "enabled": false,
+          "extentPct": 8
+        },
+        "ribAlign": "none",
+        "ribThicknessMm": 1.5875,
+        "ribCountTarget": 12,
+        "ribsManuallyEdited": false,
+        "halfRibCutPct": 35,
+        "ribs": [
+          {
+            "id": "0bd60302-cd48-4094-90c5-023e7672c0d6",
+            "positionMm": 0,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "f642d024-625a-4a97-b5a9-a98fedbaf7ce",
+            "positionMm": 47.7982,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "063f3623-c328-4032-90f6-b58cf4eac4ed",
+            "positionMm": 95.5964,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "52c83593-71f9-47a1-9d5a-0ea6d2d1f225",
+            "positionMm": 143.3945,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "e07ef537-4792-4f94-b52d-bf95f095a829",
+            "positionMm": 191.1927,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "9fa4d6ad-eae1-460f-bf3b-c1933edccf30",
+            "positionMm": 238.9909,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "09c21216-72e3-41bf-8b01-d4b71f706df2",
+            "positionMm": 286.7891,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "931eda68-c05a-4660-ade5-7f8cf0743b8b",
+            "positionMm": 334.5873,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "89567db7-05da-428b-baa2-445956bed62e",
+            "positionMm": 382.3855,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "97e5dda4-1459-44c1-91e3-867567bc1b2a",
+            "positionMm": 430.1836,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "66ce0b8e-b541-4d06-9950-b4a573569e1a",
+            "positionMm": 477.9818,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "22ddd945-b83c-4632-8fc1-7c1d3f59b4b6",
+            "positionMm": 525.78,
+            "thicknessMm": 1.5875,
+            "half": null
+          }
+        ],
+        "spars": [
+          {
+            "id": "df351596-3c20-4d49-8e94-de921ff0dd92",
+            "name": "Main spar (bass, notch in ribs)",
+            "type": "rectangle",
+            "color": "standard",
+            "spanStartMm": 0,
+            "spanEndMm": 525.78,
+            "distanceFrom": "LE",
+            "distance": {
+              "start": {
+                "value": 30,
+                "unit": "pct"
+              },
+              "end": null
+            },
+            "angleDeg": null,
+            "followLE": false,
+            "width": {
+              "start": 6.35,
+              "end": null
+            },
+            "height": {
+              "start": 10.31875,
+              "end": null
+            },
+            "autoAdjustWidth": false,
+            "realWidth": false,
+            "verticalCut": false,
+            "flat": false,
+            "radiusMm": null,
+            "offsetY": null,
+            "gapForeMm": 0,
+            "gapAftMm": 0,
+            "positionTop": true,
+            "positionBottom": false,
+            "webbing": null,
+            "aileron": null
+          },
+          {
+            "id": "190fc5a0-1975-471d-9e66-fbcbc96002b0",
+            "name": "Rear spar (bass, notch in ribs)",
+            "type": "rectangle",
+            "color": "standard",
+            "spanStartMm": 0,
+            "spanEndMm": 525.78,
+            "distanceFrom": "LE",
+            "distance": {
+              "start": {
+                "value": 65,
+                "unit": "pct"
+              },
+              "end": null
+            },
+            "angleDeg": null,
+            "followLE": false,
+            "width": {
+              "start": 3.175,
+              "end": null
+            },
+            "height": {
+              "start": 6.35,
+              "end": null
+            },
+            "autoAdjustWidth": false,
+            "realWidth": false,
+            "verticalCut": false,
+            "flat": false,
+            "radiusMm": null,
+            "offsetY": null,
+            "gapForeMm": 0,
+            "gapAftMm": 0,
+            "positionTop": true,
+            "positionBottom": false,
+            "webbing": null,
+            "aileron": null
+          }
+        ],
+        "buildingTabs": {
+          "enabled": false,
+          "above": false,
+          "below": true,
+          "fore": true,
+          "aft": true,
+          "holes": false,
+          "fromLE": {
+            "value": 5,
+            "unit": "mm"
+          },
+          "fromTE": {
+            "value": 45,
+            "unit": "mm"
+          },
+          "widthLE": 15,
+          "widthTE": 15,
+          "extendMm": 5.5,
+          "sidesMm": 2.5,
+          "endsMm": 2.5
+        },
+        "leadingEdge": {
+          "enabled": true,
+          "widthMm": 7.9375,
+          "heightMm": 16,
+          "shape": "rectangle"
+        },
+        "trailingEdge": {
+          "enabled": true,
+          "widthMm": 23.8125,
+          "heightMm": 11,
+          "shape": "triangle"
+        },
+        "sheeting": {
+          "type": "advanced",
+          "standardLength": null,
+          "standardThicknessMm": null,
+          "strips": [
+            {
+              "id": "3708b63f-f296-46d3-b81b-690104dc6c67",
+              "name": "Root sheeting, full chord top and bottom, root to rib 3",
+              "color": "standard",
+              "spanStartMm": 0,
+              "spanEndMm": 124.46000000000001,
+              "startingAt": "LE",
+              "capStrip": false,
+              "distance": {
+                "start": {
+                  "value": 0,
+                  "unit": "pct"
+                },
+                "end": null
+              },
+              "length": {
+                "start": {
+                  "value": 100,
+                  "unit": "pct"
+                },
+                "end": null
+              },
+              "thicknessMm": 1.5875,
+              "applyAbove": true,
+              "applyBelow": true
+            },
+            {
+              "id": "1576e5e3-5396-4ac7-b9d3-0a83e65c5582",
+              "name": "LE sheeting, top only",
+              "color": "standard",
+              "spanStartMm": 0,
+              "spanEndMm": 525.78,
+              "startingAt": "LE",
+              "capStrip": false,
+              "distance": {
+                "start": {
+                  "value": 0,
+                  "unit": "pct"
+                },
+                "end": null
+              },
+              "length": {
+                "start": {
+                  "value": 36,
+                  "unit": "pct"
+                },
+                "end": null
+              },
+              "thicknessMm": 1.5875,
+              "applyAbove": true,
+              "applyBelow": false
+            }
+          ]
+        },
+        "ribCombs": [],
+        "lighteningHoles": {
+          "type": "none",
+          "minDistanceMm": 5,
+          "minDistanceFromLEMm": 5,
+          "minDistanceFromTEMm": 5,
+          "distanceFromEdgeMm": 2,
+          "minWidthMm": 10,
+          "maxWidthMm": 40,
+          "supportWidthMm": 4,
+          "roundCorners": true,
+          "roundnessPct": 20,
+          "smoothnessPoints": 4
+        }
+      },
+      {
+        "id": "a56bc854-3ea5-45cd-811e-27d18b8d9596",
+        "name": "Outboard panel",
+        "lengthMm": 467.35999999999996,
+        "rootChordMm": 226.06,
+        "tipChordMm": 182.88,
+        "sweepMm": 43.18,
+        "rootTwistDeg": 0,
+        "tipTwistDeg": -1,
+        "straightTE": false,
+        "dihedralDeg": 13.5,
+        "dihedralTipDeg": null,
+        "startAtMm": null,
+        "rootAirfoilId": "naca-2412",
+        "rootAirfoilScale": 1,
+        "tipAirfoilId": null,
+        "tipAirfoilScale": 1,
+        "airfoilLinkedToPrev": false,
+        "noseSmoothing": {
+          "enabled": false,
+          "extentPct": 8
+        },
+        "ribAlign": "none",
+        "ribThicknessMm": 1.5875,
+        "ribCountTarget": 10,
+        "ribsManuallyEdited": true,
+        "halfRibCutPct": 35,
+        "ribs": [
+          {
+            "id": "0dc244f4-3951-4f4a-bd48-25e7034b1cfb",
+            "positionMm": 51.9289,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "59ad8eea-290c-4d8a-981f-e9a9f48eea6e",
+            "positionMm": 103.8578,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "83d755ad-6da5-4e8e-aab2-b9b8827cae04",
+            "positionMm": 155.7867,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "3b99e5d7-d8ba-435d-baf0-7bc41087d61d",
+            "positionMm": 207.7156,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "b7e08384-5541-4c13-9e5c-3554bea919cd",
+            "positionMm": 259.6444,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "31f79792-f6b0-4fb0-b908-be8265dedf50",
+            "positionMm": 311.5733,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "bbdabdd4-117a-4573-9f97-c18400b38bab",
+            "positionMm": 363.5022,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "e73e05a1-081c-4f59-818b-09278b5df0d2",
+            "positionMm": 415.4311,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "82616987-34a0-4f47-99cb-7db8106be0c0",
+            "positionMm": 467.36,
+            "thicknessMm": 1.5875,
+            "half": null
+          }
+        ],
+        "spars": [
+          {
+            "id": "b7eb7d2f-8bb6-4947-a880-4af505df0f0a",
+            "name": "Main spar (balsa, notch in ribs)",
+            "type": "rectangle",
+            "color": "standard",
+            "spanStartMm": 0,
+            "spanEndMm": 467.35999999999996,
+            "distanceFrom": "LE",
+            "distance": {
+              "start": {
+                "value": 30,
+                "unit": "pct"
+              },
+              "end": null
+            },
+            "angleDeg": null,
+            "followLE": false,
+            "width": {
+              "start": 6.35,
+              "end": null
+            },
+            "height": {
+              "start": 9.524999999999999,
+              "end": null
+            },
+            "autoAdjustWidth": false,
+            "realWidth": false,
+            "verticalCut": false,
+            "flat": false,
+            "radiusMm": null,
+            "offsetY": null,
+            "gapForeMm": 0,
+            "gapAftMm": 0,
+            "positionTop": true,
+            "positionBottom": false,
+            "webbing": null,
+            "aileron": null
+          },
+          {
+            "id": "c6da7ee8-7a08-49a9-8fde-2cd8c3477c23",
+            "name": "Rear spar (balsa, notch in ribs)",
+            "type": "rectangle",
+            "color": "standard",
+            "spanStartMm": 0,
+            "spanEndMm": 467.35999999999996,
+            "distanceFrom": "LE",
+            "distance": {
+              "start": {
+                "value": 65,
+                "unit": "pct"
+              },
+              "end": null
+            },
+            "angleDeg": null,
+            "followLE": false,
+            "width": {
+              "start": 3.175,
+              "end": null
+            },
+            "height": {
+              "start": 6.35,
+              "end": null
+            },
+            "autoAdjustWidth": false,
+            "realWidth": false,
+            "verticalCut": false,
+            "flat": false,
+            "radiusMm": null,
+            "offsetY": null,
+            "gapForeMm": 0,
+            "gapAftMm": 0,
+            "positionTop": true,
+            "positionBottom": false,
+            "webbing": null,
+            "aileron": null
+          }
+        ],
+        "buildingTabs": {
+          "enabled": false,
+          "above": false,
+          "below": true,
+          "fore": true,
+          "aft": true,
+          "holes": false,
+          "fromLE": {
+            "value": 5,
+            "unit": "mm"
+          },
+          "fromTE": {
+            "value": 45,
+            "unit": "mm"
+          },
+          "widthLE": 15,
+          "widthTE": 15,
+          "extendMm": 5.5,
+          "sidesMm": 2.5,
+          "endsMm": 2.5
+        },
+        "leadingEdge": {
+          "enabled": true,
+          "widthMm": 7.9375,
+          "heightMm": 16,
+          "shape": "rectangle"
+        },
+        "trailingEdge": {
+          "enabled": true,
+          "widthMm": 23.8125,
+          "heightMm": 11,
+          "shape": "triangle"
+        },
+        "sheeting": {
+          "type": "advanced",
+          "standardLength": null,
+          "standardThicknessMm": null,
+          "strips": [
+            {
+              "id": "0f608aca-10c0-40f0-b05f-54657cb081b0",
+              "name": "LE sheeting, top only",
+              "color": "standard",
+              "spanStartMm": 0,
+              "spanEndMm": 467.35999999999996,
+              "startingAt": "LE",
+              "capStrip": false,
+              "distance": {
+                "start": {
+                  "value": 0,
+                  "unit": "pct"
+                },
+                "end": null
+              },
+              "length": {
+                "start": {
+                  "value": 36,
+                  "unit": "pct"
+                },
+                "end": null
+              },
+              "thicknessMm": 1.5875,
+              "applyAbove": true,
+              "applyBelow": false
+            }
+          ]
+        },
+        "ribCombs": [],
+        "lighteningHoles": {
+          "type": "none",
+          "minDistanceMm": 5,
+          "minDistanceFromLEMm": 5,
+          "minDistanceFromTEMm": 5,
+          "distanceFromEdgeMm": 2,
+          "minWidthMm": 10,
+          "maxWidthMm": 40,
+          "supportWidthMm": 4,
+          "roundCorners": true,
+          "roundnessPct": 20,
+          "smoothnessPoints": 4
+        }
+      }
+    ],
+    "wingHalvesDistanceMm": 0
+  },
+  "airfoils": [],
+  "createdAt": "2026-10-08T18:15:18.135Z",
+  "updatedAt": "2026-10-08T18:15:18.136Z"
+}

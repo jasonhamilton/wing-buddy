@@ -1,0 +1,203 @@
+/* Design tokens. */
+
+:root {
+  color-scheme: light dark;
+
+  --wb-bg: #ffffff;
+  --wb-surface: #f3f5f7;
+  --wb-surface-raised: #ffffff;
+  --wb-surface-sunken: #e9ecf0;
+  --wb-viewport: #d6dade;
+  --wb-viewport-grid: #b9bfc6;
+  --wb-border: #d2d7dd;
+  --wb-border-strong: #6f7783;
+  --wb-border-input: #7d8591;
+  --wb-input-bg: #ffffff;
+  --wb-input-bg-disabled: #eceef1;
+  --wb-fg: #14171c;
+  --wb-muted: #555d69;
+  --wb-disabled: #616874;
+  --wb-accent: #5a3fc4;
+  --wb-on-accent: #ffffff;
+  --wb-selected: #e7e1fa;
+  --wb-on-selected: #241850;
+  --wb-danger: #bc2626;
+  --wb-success: #196e45;
+  --wb-warning: #8a5500;
+  --wb-changed: #fde8cc;
+  --wb-changed-edge: #e69f00;
+
+  --wb-geo-rib: #e69f00;
+  --wb-geo-spar: #0072b2;
+  --wb-geo-webbing: #56b4e9;
+  --wb-geo-sheeting: #c9a45c;
+  --wb-geo-leading-edge: #009e73;
+  --wb-geo-trailing-edge: #d55e00;
+  --wb-geo-sheeting: #cc79a7;
+  --wb-geo-comb: #f0e442;
+  --wb-geo-ghost: #8a929c;
+  --wb-geo-tabs: #8c6d3f;
+  --wb-geoline-rib: #a66f00;
+  --wb-geoline-spar: #0072b2;
+  --wb-geoline-webbing: #1f7fae;
+  --wb-geoline-leading-edge: #007a59;
+  --wb-geoline-trailing-edge: #b04c00;
+  --wb-geoline-sheeting: #a9548a;
+  --wb-geoline-comb: #6f6200;
+  --wb-geoline-ghost: #6b7280;
+
+  --wb-font-sans: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  --wb-font-mono: JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --wb-text-micro: 11px;
+  --wb-leading-micro: 14px;
+  --wb-weight-micro: 500;
+  --wb-text-xs: 12px;
+  --wb-leading-xs: 16px;
+  --wb-weight-xs: 400;
+  --wb-text-sm: 13px;
+  --wb-leading-sm: 18px;
+  --wb-weight-sm: 400;
+  --wb-text-base: 15px;
+  --wb-leading-base: 22px;
+  --wb-weight-base: 400;
+  --wb-text-lg: 18px;
+  --wb-leading-lg: 24px;
+  --wb-weight-lg: 600;
+  --wb-text-xl: 22px;
+  --wb-leading-xl: 28px;
+  --wb-weight-xl: 600;
+  --wb-text-display: 30px;
+  --wb-leading-display: 36px;
+  --wb-weight-display: 700;
+
+  --wb-space-0: 0px;
+  --wb-space-1: 2px;
+  --wb-space-2: 4px;
+  --wb-space-3: 6px;
+  --wb-space-4: 8px;
+  --wb-space-5: 12px;
+  --wb-space-6: 16px;
+  --wb-space-7: 20px;
+  --wb-space-8: 24px;
+  --wb-space-9: 32px;
+  --wb-space-10: 48px;
+
+  --wb-radius-sm: 3px;
+  --wb-radius-md: 5px;
+  --wb-radius-lg: 8px;
+  --wb-radius-pill: 999px;
+
+  --wb-shadow-card: 0 1px 2px rgba(10,14,20,.08);
+  --wb-shadow-pop: 0 8px 24px rgba(10,14,20,.18), 0 2px 6px rgba(10,14,20,.10);
+  --wb-shadow-pop-dark: 0 8px 24px rgba(0,0,0,.50), 0 2px 6px rgba(0,0,0,.35);
+
+  --wb-motion-fast: 100ms;
+  --wb-motion-base: 160ms;
+  --wb-motion-ease: cubic-bezier(.2,.8,.2,1);
+
+  --wb-control-height-compact: 28px;
+  --wb-control-height-default: 32px;
+  --wb-control-height-large: 38px;
+  --wb-control-table-row: 28px;
+  --wb-control-form-row-gap: 6px;
+  --wb-control-label-column: 128px;
+  --wb-control-field-min: 104px;
+  --wb-control-icon: 16px;
+  --wb-control-focus-ring: 2px;
+  --wb-control-focus-offset: 1px;
+
+  --wb-layout-min-width: 1024px;
+  --wb-layout-target-width: 1440px;
+  --wb-layout-left-rail: 280px;
+  --wb-layout-inspector-split: 0.44;
+  --wb-layout-inspector-min: 380px;
+  --wb-layout-viewport-min: 420px;
+  --wb-layout-toolbar-height: 40px;
+  --wb-layout-tabbar-height: 34px;
+  --wb-layout-statusbar-height: 24px;
+  --wb-bp-sm: 1024px;
+  --wb-bp-md: 1280px;
+  --wb-bp-lg: 1600px;
+
+  --wb-shadow-popover: var(--wb-shadow-pop);
+}
+
+/* Dark by system preference, unless the page has explicitly opted into light. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+  --wb-bg: #16181c;
+  --wb-surface: #1d2025;
+  --wb-surface-raised: #252930;
+  --wb-surface-sunken: #111317;
+  --wb-viewport: #2b2f36;
+  --wb-viewport-grid: #434953;
+  --wb-border: #333842;
+  --wb-border-strong: #8d96a3;
+  --wb-border-input: #79828f;
+  --wb-input-bg: #111317;
+  --wb-input-bg-disabled: #1b1e23;
+  --wb-fg: #e7eaee;
+  --wb-muted: #a3abb7;
+  --wb-disabled: #8d96a3;
+  --wb-accent: #b4a3ff;
+  --wb-on-accent: #160e30;
+  --wb-selected: #33285f;
+  --wb-on-selected: #e6e0fa;
+  --wb-danger: #f1796f;
+  --wb-success: #4fc089;
+  --wb-warning: #e0a53c;
+  --wb-changed: #4a3516;
+  --wb-changed-edge: #e0a53c;
+    --wb-shadow-popover: var(--wb-shadow-pop-dark);
+  }
+}
+
+/* Dark by explicit choice. */
+:root[data-theme="dark"] {
+  --wb-bg: #16181c;
+  --wb-surface: #1d2025;
+  --wb-surface-raised: #252930;
+  --wb-surface-sunken: #111317;
+  --wb-viewport: #2b2f36;
+  --wb-viewport-grid: #434953;
+  --wb-border: #333842;
+  --wb-border-strong: #8d96a3;
+  --wb-border-input: #79828f;
+  --wb-input-bg: #111317;
+  --wb-input-bg-disabled: #1b1e23;
+  --wb-fg: #e7eaee;
+  --wb-muted: #a3abb7;
+  --wb-disabled: #8d96a3;
+  --wb-accent: #b4a3ff;
+  --wb-on-accent: #160e30;
+  --wb-selected: #33285f;
+  --wb-on-selected: #e6e0fa;
+  --wb-danger: #f1796f;
+  --wb-success: #4fc089;
+  --wb-warning: #e0a53c;
+  --wb-changed: #4a3516;
+  --wb-changed-edge: #e0a53c;
+  --wb-shadow-popover: var(--wb-shadow-pop-dark);
+}
+
+html, body {
+  background: var(--wb-bg);
+  color: var(--wb-fg);
+  font-family: var(--wb-font-sans);
+  font-size: var(--wb-text-sm);
+  line-height: var(--wb-leading-sm);
+}
+
+/* Numbers must not jitter while a spinner runs. */
+input[type="number"], .wb-num, [data-numeric] {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 1ms !important;
+    transition-duration: 1ms !important;
+  }
+}

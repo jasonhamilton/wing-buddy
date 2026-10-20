@@ -1,0 +1,153 @@
+@import "tailwindcss";
+@import "./tokens.css";
+
+/* Maps the --wb-* roles onto Tailwind's theme namespaces, so components
+   write `bg-surface text-muted border-input` and never a raw hex. */
+
+@theme inline {
+  --color-bg: var(--wb-bg);
+  --color-surface: var(--wb-surface);
+  --color-surface-raised: var(--wb-surface-raised);
+  --color-surface-sunken: var(--wb-surface-sunken);
+  --color-viewport: var(--wb-viewport);
+  --color-viewport-grid: var(--wb-viewport-grid);
+  --color-border: var(--wb-border);
+  --color-border-strong: var(--wb-border-strong);
+  --color-border-input: var(--wb-border-input);
+  --color-input-bg: var(--wb-input-bg);
+  --color-input-bg-disabled: var(--wb-input-bg-disabled);
+  --color-fg: var(--wb-fg);
+  --color-muted: var(--wb-muted);
+  --color-disabled: var(--wb-disabled);
+  --color-accent: var(--wb-accent);
+  --color-on-accent: var(--wb-on-accent);
+  --color-selected: var(--wb-selected);
+  --color-on-selected: var(--wb-on-selected);
+  --color-danger: var(--wb-danger);
+  --color-success: var(--wb-success);
+  --color-warning: var(--wb-warning);
+  --color-changed: var(--wb-changed);
+  --color-changed-edge: var(--wb-changed-edge);
+
+  --color-geo-rib: var(--wb-geo-rib);
+  --color-geo-spar: var(--wb-geo-spar);
+  --color-geo-webbing: var(--wb-geo-webbing);
+  --color-geo-sheeting: var(--wb-geo-sheeting);
+  --color-geo-leading-edge: var(--wb-geo-leading-edge);
+  --color-geo-trailing-edge: var(--wb-geo-trailing-edge);
+  --color-geo-sheeting: var(--wb-geo-sheeting);
+  --color-geo-comb: var(--wb-geo-comb);
+  --color-geo-ghost: var(--wb-geo-ghost);
+  --color-geo-tabs: var(--wb-geo-tabs);
+  --color-geoline-rib: var(--wb-geoline-rib);
+  --color-geoline-spar: var(--wb-geoline-spar);
+  --color-geoline-webbing: var(--wb-geoline-webbing);
+  --color-geoline-leading-edge: var(--wb-geoline-leading-edge);
+  --color-geoline-trailing-edge: var(--wb-geoline-trailing-edge);
+  --color-geoline-sheeting: var(--wb-geoline-sheeting);
+  --color-geoline-comb: var(--wb-geoline-comb);
+  --color-geoline-ghost: var(--wb-geoline-ghost);
+
+  --font-sans: var(--wb-font-sans);
+  --font-mono: var(--wb-font-mono);
+
+  --text-micro: var(--wb-text-micro);
+  --text-micro--line-height: var(--wb-leading-micro);
+  --text-xs: var(--wb-text-xs);
+  --text-xs--line-height: var(--wb-leading-xs);
+  --text-sm: var(--wb-text-sm);
+  --text-sm--line-height: var(--wb-leading-sm);
+  --text-base: var(--wb-text-base);
+  --text-base--line-height: var(--wb-leading-base);
+  --text-lg: var(--wb-text-lg);
+  --text-lg--line-height: var(--wb-leading-lg);
+  --text-xl: var(--wb-text-xl);
+  --text-xl--line-height: var(--wb-leading-xl);
+  --text-display: var(--wb-text-display);
+  --text-display--line-height: var(--wb-leading-display);
+
+  --radius-sm: var(--wb-radius-sm);
+  --radius-md: var(--wb-radius-md);
+  --radius-lg: var(--wb-radius-lg);
+  --radius-pill: var(--wb-radius-pill);
+
+  --spacing-0: var(--wb-space-0);
+  --spacing-1: var(--wb-space-1);
+  --spacing-2: var(--wb-space-2);
+  --spacing-3: var(--wb-space-3);
+  --spacing-4: var(--wb-space-4);
+  --spacing-5: var(--wb-space-5);
+  --spacing-6: var(--wb-space-6);
+  --spacing-7: var(--wb-space-7);
+  --spacing-8: var(--wb-space-8);
+  --spacing-9: var(--wb-space-9);
+  --spacing-10: var(--wb-space-10);
+
+  --spacing-ctl-height-compact: var(--wb-control-height-compact);
+  --spacing-ctl-height-default: var(--wb-control-height-default);
+  --spacing-ctl-height-large: var(--wb-control-height-large);
+  --spacing-ctl-table-row: var(--wb-control-table-row);
+  --spacing-ctl-form-row-gap: var(--wb-control-form-row-gap);
+  --spacing-ctl-label-column: var(--wb-control-label-column);
+  --spacing-ctl-field-min: var(--wb-control-field-min);
+  --spacing-ctl-icon: var(--wb-control-icon);
+  --spacing-ctl-focus-ring: var(--wb-control-focus-ring);
+  --spacing-ctl-focus-offset: var(--wb-control-focus-offset);
+}
+
+/* Focus is one rule, applied everywhere, never per component. */
+@layer base {
+  :where(a, button, input, select, textarea, [tabindex]):focus-visible {
+    outline: var(--wb-control-focus-ring) solid var(--wb-accent);
+    outline-offset: var(--wb-control-focus-offset);
+    border-radius: var(--wb-radius-sm);
+  }
+}
+
+/* ---- app-level theme additions (hand-maintained, not generated) ---- */
+@theme inline {
+  --spacing-ctl: var(--wb-control-height-compact);
+  --shadow-pop: var(--wb-shadow-popover);
+  --shadow-card: var(--wb-shadow-card);
+}
+
+@layer base {
+  html, body, #root { height: 100%; }
+  body { overflow: hidden; }
+}
+
+@layer components {
+  /* Checkbox and radio: one appearance, used by Checkbox and Radio. */
+  .wb-check {
+    appearance: none;
+    width: 16px; height: 16px; margin: 0; flex: none; position: relative; cursor: pointer;
+    border: 1px solid var(--wb-border-input);
+    border-radius: var(--wb-radius-sm);
+    background: var(--wb-input-bg);
+  }
+  .wb-check.wb-radio { border-radius: 999px; }
+  .wb-check:checked { background: var(--wb-accent); border-color: var(--wb-accent); }
+  .wb-check:checked::after {
+    content: ""; position: absolute; inset: 0; background: var(--wb-on-accent);
+    -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path d='M3.5 8.5l3 3 6-6' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/></svg>") center/12px no-repeat;
+    mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path d='M3.5 8.5l3 3 6-6' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/></svg>") center/12px no-repeat;
+  }
+  .wb-check.wb-radio:checked::after {
+    -webkit-mask: none; mask: none; inset: 4px; border-radius: 999px;
+  }
+  .wb-check:disabled { background: var(--wb-input-bg-disabled); border-color: var(--wb-border); cursor: not-allowed; }
+
+  .wb-scroll::-webkit-scrollbar { width: 10px; height: 10px; }
+  .wb-scroll::-webkit-scrollbar-thumb { background: var(--wb-border-strong); border-radius: 999px;
+    border: 3px solid transparent; background-clip: content-box; }
+  .wb-scroll::-webkit-scrollbar-track { background: transparent; }
+}
+
+/* The panel list and the simplified builder trade places by sliding in from the left. */
+@keyframes wb-slide-in {
+  from { opacity: 0; transform: translateX(-24px); }
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .wb-slide-in { animation: wb-slide-in 200ms ease-out; }
+}

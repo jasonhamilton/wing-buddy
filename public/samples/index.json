@@ -1,0 +1,10 @@
+{
+  "plans": [
+    { "name": "Allegro-Lite 2m", "file": "allegro-lite-2m.wingbuddy.json" },
+    { "name": "Aquila", "file": "aquila.wingbuddy.json" },
+    { "name": "Bird of Time", "file": "bird-of-time.wingbuddy.json" },
+    { "name": "Bubble Dancer", "file": "bubble-dancer.wingbuddy.json" },
+    { "name": "Gentle Lady", "file": "gentle-lady.wingbuddy.json" },
+    { "name": "Olympic II", "file": "olympic-ii.wingbuddy.json" }
+  ]
+}

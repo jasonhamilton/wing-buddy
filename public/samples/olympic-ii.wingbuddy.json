@@ -1,0 +1,419 @@
+{
+  "schemaVersion": 1,
+  "id": "a142773e-6cd6-4b30-8d57-8530e48ace28",
+  "name": "plan-library/outerzone.co.uk/5116-olympic-ii (Airtronics Olympic II, sheet 2)",
+  "displayUnits": "mm",
+  "wing": {
+    "panels": [
+      {
+        "id": "522f7935-d7d5-4b2f-86fb-4a11f8b41c8a",
+        "name": "Centre panel",
+        "lengthMm": 792.4799999999999,
+        "rootChordMm": 251.46,
+        "tipChordMm": 251.46,
+        "sweepMm": 0,
+        "rootTwistDeg": 0,
+        "tipTwistDeg": 0,
+        "straightTE": false,
+        "dihedralDeg": 5,
+        "dihedralTipDeg": null,
+        "startAtMm": null,
+        "rootAirfoilId": "naca-2412",
+        "rootAirfoilScale": 1,
+        "tipAirfoilId": null,
+        "tipAirfoilScale": 1,
+        "airfoilLinkedToPrev": false,
+        "noseSmoothing": {
+          "enabled": false,
+          "extentPct": 8
+        },
+        "ribAlign": "none",
+        "ribThicknessMm": 2.3812499999999996,
+        "ribCountTarget": 15,
+        "ribsManuallyEdited": true,
+        "halfRibCutPct": 35,
+        "ribs": [
+          {
+            "id": "8a272abf-3b62-4a42-b8cb-217e76d97798",
+            "positionMm": 0,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "c218bc29-14e2-4182-af68-67092a30740b",
+            "positionMm": 56.6057,
+            "thicknessMm": 2.3812499999999996,
+            "half": null
+          },
+          {
+            "id": "b40316af-70ac-47a4-9169-82e33590c3fe",
+            "positionMm": 113.2114,
+            "thicknessMm": 2.3812499999999996,
+            "half": null
+          },
+          {
+            "id": "57ced9d8-5bf8-4452-a4e1-ade2c119f0e3",
+            "positionMm": 169.8171,
+            "thicknessMm": 2.3812499999999996,
+            "half": null
+          },
+          {
+            "id": "94221123-d4de-4c86-9cdc-c64eca1a1fc3",
+            "positionMm": 226.4229,
+            "thicknessMm": 2.3812499999999996,
+            "half": null
+          },
+          {
+            "id": "43c35120-f4fc-480b-9309-7f8298bbf554",
+            "positionMm": 283.0286,
+            "thicknessMm": 2.3812499999999996,
+            "half": null
+          },
+          {
+            "id": "2531ac6f-d5e8-4528-8ecc-45d235469212",
+            "positionMm": 339.6343,
+            "thicknessMm": 2.3812499999999996,
+            "half": null
+          },
+          {
+            "id": "e4e17971-57c6-4a50-ae93-6e285189f9d9",
+            "positionMm": 396.24,
+            "thicknessMm": 2.3812499999999996,
+            "half": null
+          },
+          {
+            "id": "45226a22-98af-428e-a591-6641246057fa",
+            "positionMm": 452.8457,
+            "thicknessMm": 2.3812499999999996,
+            "half": null
+          },
+          {
+            "id": "71009704-70c7-479d-a1fd-523ebf5aa020",
+            "positionMm": 509.4514,
+            "thicknessMm": 2.3812499999999996,
+            "half": null
+          },
+          {
+            "id": "93fde32e-48eb-42cf-acc4-f24ac836934e",
+            "positionMm": 566.0571,
+            "thicknessMm": 2.3812499999999996,
+            "half": null
+          },
+          {
+            "id": "23e4aa74-a53c-4bd6-89c3-b3cca93648cb",
+            "positionMm": 622.6629,
+            "thicknessMm": 2.3812499999999996,
+            "half": null
+          },
+          {
+            "id": "9084fe89-e3a3-44af-8177-0335a015e86b",
+            "positionMm": 679.2686,
+            "thicknessMm": 2.3812499999999996,
+            "half": null
+          },
+          {
+            "id": "cc39ffb5-773a-4fbc-8456-dd0aab3dbace",
+            "positionMm": 735.8743,
+            "thicknessMm": 2.3812499999999996,
+            "half": null
+          },
+          {
+            "id": "cf042f57-0baf-40d0-bdfd-884479eed934",
+            "positionMm": 792.48,
+            "thicknessMm": 4.762499999999999,
+            "half": null
+          }
+        ],
+        "spars": [
+          {
+            "id": "05ef270c-aced-42f8-9cfa-c445eb10debc",
+            "name": "Spruce spar (top and bottom)",
+            "type": "rectangle",
+            "color": "standard",
+            "spanStartMm": 0,
+            "spanEndMm": 792.4799999999999,
+            "distanceFrom": "LE",
+            "distance": {
+              "start": {
+                "value": 31,
+                "unit": "pct"
+              },
+              "end": null
+            },
+            "angleDeg": null,
+            "followLE": false,
+            "width": {
+              "start": 6.35,
+              "end": null
+            },
+            "height": {
+              "start": 3.175,
+              "end": null
+            },
+            "autoAdjustWidth": false,
+            "realWidth": false,
+            "verticalCut": false,
+            "flat": false,
+            "radiusMm": null,
+            "offsetY": null,
+            "gapForeMm": 0,
+            "gapAftMm": 0,
+            "positionTop": true,
+            "positionBottom": true,
+            "webbing": null,
+            "aileron": null
+          }
+        ],
+        "buildingTabs": {
+          "enabled": false,
+          "above": false,
+          "below": true,
+          "fore": true,
+          "aft": true,
+          "holes": false,
+          "fromLE": {
+            "value": 5,
+            "unit": "mm"
+          },
+          "fromTE": {
+            "value": 45,
+            "unit": "mm"
+          },
+          "widthLE": 15,
+          "widthTE": 15,
+          "extendMm": 5.5,
+          "sidesMm": 2.5,
+          "endsMm": 2.5
+        },
+        "leadingEdge": {
+          "enabled": true,
+          "widthMm": 7.9375,
+          "heightMm": 17,
+          "shape": "rectangle"
+        },
+        "trailingEdge": {
+          "enabled": true,
+          "widthMm": 25.4,
+          "heightMm": 12,
+          "shape": "triangle"
+        },
+        "sheeting": {
+          "type": "advanced",
+          "standardLength": null,
+          "standardThicknessMm": null,
+          "strips": [
+            {
+              "id": "50e2cbe7-c8e1-4d06-9c20-8b1d32d91c5e",
+              "name": "Top centre sheet, root bays",
+              "color": "standard",
+              "spanStartMm": 0,
+              "spanEndMm": 111.76,
+              "startingAt": "LE",
+              "capStrip": false,
+              "distance": {
+                "start": {
+                  "value": 0,
+                  "unit": "pct"
+                },
+                "end": null
+              },
+              "length": {
+                "start": {
+                  "value": 100,
+                  "unit": "pct"
+                },
+                "end": null
+              },
+              "thicknessMm": 1.5875,
+              "applyAbove": true,
+              "applyBelow": false
+            }
+          ]
+        },
+        "ribCombs": [],
+        "lighteningHoles": {
+          "type": "none",
+          "minDistanceMm": 5,
+          "minDistanceFromLEMm": 5,
+          "minDistanceFromTEMm": 5,
+          "distanceFromEdgeMm": 2,
+          "minWidthMm": 10,
+          "maxWidthMm": 40,
+          "supportWidthMm": 4,
+          "roundCorners": true,
+          "roundnessPct": 20,
+          "smoothnessPoints": 4
+        }
+      },
+      {
+        "id": "979e76d1-92ff-4d38-b640-606aaa1d16d3",
+        "name": "Outer panel",
+        "lengthMm": 459.74,
+        "rootChordMm": 251.46,
+        "tipChordMm": 165.1,
+        "sweepMm": 35.559999999999995,
+        "rootTwistDeg": 0,
+        "tipTwistDeg": 0,
+        "straightTE": false,
+        "dihedralDeg": 7.5,
+        "dihedralTipDeg": null,
+        "startAtMm": null,
+        "rootAirfoilId": "naca-2412",
+        "rootAirfoilScale": 1,
+        "tipAirfoilId": null,
+        "tipAirfoilScale": 1,
+        "airfoilLinkedToPrev": false,
+        "noseSmoothing": {
+          "enabled": false,
+          "extentPct": 8
+        },
+        "ribAlign": "none",
+        "ribThicknessMm": 2.3812499999999996,
+        "ribCountTarget": 8,
+        "ribsManuallyEdited": true,
+        "halfRibCutPct": 35,
+        "ribs": [
+          {
+            "id": "77cb54e1-23a0-4ac3-aff6-704d44cb0087",
+            "positionMm": 65.6771,
+            "thicknessMm": 2.3812499999999996,
+            "half": null
+          },
+          {
+            "id": "108c2127-1778-4bc9-999b-3e6f48773ac4",
+            "positionMm": 131.3543,
+            "thicknessMm": 2.3812499999999996,
+            "half": null
+          },
+          {
+            "id": "437c3670-24df-46fa-a3b2-1c7473cc0df3",
+            "positionMm": 197.0314,
+            "thicknessMm": 2.3812499999999996,
+            "half": null
+          },
+          {
+            "id": "4e6551ec-6878-4672-93d5-e300b97b7daf",
+            "positionMm": 262.7086,
+            "thicknessMm": 2.3812499999999996,
+            "half": null
+          },
+          {
+            "id": "3b4b7ca5-7fea-41b4-8ac5-db47db5a42dd",
+            "positionMm": 328.3857,
+            "thicknessMm": 2.3812499999999996,
+            "half": null
+          },
+          {
+            "id": "491b4e15-4f63-489b-a915-ef178116de6d",
+            "positionMm": 394.0629,
+            "thicknessMm": 2.3812499999999996,
+            "half": null
+          },
+          {
+            "id": "0ab6b700-b1fa-4710-831c-d98f43cb69c2",
+            "positionMm": 459.74,
+            "thicknessMm": 2.3812499999999996,
+            "half": null
+          }
+        ],
+        "spars": [
+          {
+            "id": "8308a52b-32c8-4a68-b6ba-23e33cdc61ff",
+            "name": "Spruce spar (top and bottom)",
+            "type": "rectangle",
+            "color": "standard",
+            "spanStartMm": 0,
+            "spanEndMm": 459.74,
+            "distanceFrom": "LE",
+            "distance": {
+              "start": {
+                "value": 31,
+                "unit": "pct"
+              },
+              "end": null
+            },
+            "angleDeg": null,
+            "followLE": false,
+            "width": {
+              "start": 6.35,
+              "end": null
+            },
+            "height": {
+              "start": 3.175,
+              "end": null
+            },
+            "autoAdjustWidth": false,
+            "realWidth": false,
+            "verticalCut": false,
+            "flat": false,
+            "radiusMm": null,
+            "offsetY": null,
+            "gapForeMm": 0,
+            "gapAftMm": 0,
+            "positionTop": true,
+            "positionBottom": true,
+            "webbing": null,
+            "aileron": null
+          }
+        ],
+        "buildingTabs": {
+          "enabled": false,
+          "above": false,
+          "below": true,
+          "fore": true,
+          "aft": true,
+          "holes": false,
+          "fromLE": {
+            "value": 5,
+            "unit": "mm"
+          },
+          "fromTE": {
+            "value": 45,
+            "unit": "mm"
+          },
+          "widthLE": 15,
+          "widthTE": 15,
+          "extendMm": 5.5,
+          "sidesMm": 2.5,
+          "endsMm": 2.5
+        },
+        "leadingEdge": {
+          "enabled": true,
+          "widthMm": 7.9375,
+          "heightMm": 17,
+          "shape": "rectangle"
+        },
+        "trailingEdge": {
+          "enabled": true,
+          "widthMm": 25.4,
+          "heightMm": 12,
+          "shape": "triangle"
+        },
+        "sheeting": {
+          "type": "none",
+          "standardLength": null,
+          "standardThicknessMm": null,
+          "strips": []
+        },
+        "ribCombs": [],
+        "lighteningHoles": {
+          "type": "none",
+          "minDistanceMm": 5,
+          "minDistanceFromLEMm": 5,
+          "minDistanceFromTEMm": 5,
+          "distanceFromEdgeMm": 2,
+          "minWidthMm": 10,
+          "maxWidthMm": 40,
+          "supportWidthMm": 4,
+          "roundCorners": true,
+          "roundnessPct": 20,
+          "smoothnessPoints": 4
+        }
+      }
+    ],
+    "wingHalvesDistanceMm": 60.959999999999994
+  },
+  "airfoils": [],
+  "createdAt": "2026-10-08T18:15:17.508Z",
+  "updatedAt": "2026-10-08T18:15:17.508Z"
+}

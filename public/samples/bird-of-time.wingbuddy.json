@@ -1,0 +1,590 @@
+{
+  "schemaVersion": 1,
+  "id": "1112b441-ef19-43ac-a5f2-d373e0847f3c",
+  "name": "plan-library/outerzone.co.uk/2093-bird-of-time (RCM plan 751, Dave Thornburg)",
+  "displayUnits": "mm",
+  "wing": {
+    "panels": [
+      {
+        "id": "dbad9f2e-e2a1-497c-8704-1e54542013ca",
+        "name": "Centre panel",
+        "lengthMm": 614.68,
+        "rootChordMm": 251.46,
+        "tipChordMm": 251.46,
+        "sweepMm": 0,
+        "rootTwistDeg": 0,
+        "tipTwistDeg": 0,
+        "straightTE": false,
+        "dihedralDeg": 3.6,
+        "dihedralTipDeg": null,
+        "startAtMm": null,
+        "rootAirfoilId": "naca-2412",
+        "rootAirfoilScale": 1,
+        "tipAirfoilId": null,
+        "tipAirfoilScale": 1,
+        "airfoilLinkedToPrev": false,
+        "noseSmoothing": {
+          "enabled": false,
+          "extentPct": 8
+        },
+        "ribAlign": "none",
+        "ribThicknessMm": 3.175,
+        "ribCountTarget": 11,
+        "ribsManuallyEdited": false,
+        "halfRibCutPct": 35,
+        "ribs": [
+          {
+            "id": "f110d3f5-f8ea-4840-ba9a-20ae0eb25d83",
+            "positionMm": 0,
+            "thicknessMm": 3.175,
+            "half": null
+          },
+          {
+            "id": "8d52ebc6-3ac1-418d-abe8-edbb632c25ce",
+            "positionMm": 61.468,
+            "thicknessMm": 3.175,
+            "half": null
+          },
+          {
+            "id": "a965fed9-1588-44a9-bad6-71113f578786",
+            "positionMm": 122.936,
+            "thicknessMm": 3.175,
+            "half": null
+          },
+          {
+            "id": "0107062f-1a8e-4d46-93b4-f7d630fbef7e",
+            "positionMm": 184.404,
+            "thicknessMm": 3.175,
+            "half": null
+          },
+          {
+            "id": "bb719ada-51f3-4c3d-8991-a36e24aad57b",
+            "positionMm": 245.872,
+            "thicknessMm": 3.175,
+            "half": null
+          },
+          {
+            "id": "dfa04878-a020-41e1-8ea6-7633a378c361",
+            "positionMm": 307.34,
+            "thicknessMm": 3.175,
+            "half": null
+          },
+          {
+            "id": "0c24ec1a-ce85-41f0-a53e-b701a5bec82e",
+            "positionMm": 368.808,
+            "thicknessMm": 3.175,
+            "half": null
+          },
+          {
+            "id": "7afce196-7b02-4e6d-8aeb-339a3ef99199",
+            "positionMm": 430.276,
+            "thicknessMm": 3.175,
+            "half": null
+          },
+          {
+            "id": "856200f4-af55-47bf-bd8e-fb5dfad6c45e",
+            "positionMm": 491.744,
+            "thicknessMm": 3.175,
+            "half": null
+          },
+          {
+            "id": "a821c0c4-dab0-402f-bba6-edee9ef573d4",
+            "positionMm": 553.212,
+            "thicknessMm": 3.175,
+            "half": null
+          },
+          {
+            "id": "24af3af3-b678-477f-989a-4e24324faaff",
+            "positionMm": 614.68,
+            "thicknessMm": 3.175,
+            "half": null
+          }
+        ],
+        "spars": [
+          {
+            "id": "46fe1048-9ec8-4aa6-bd2d-744d4121bf72",
+            "name": "Spar (top and bottom)",
+            "type": "rectangle",
+            "color": "standard",
+            "spanStartMm": 0,
+            "spanEndMm": 614.68,
+            "distanceFrom": "LE",
+            "distance": {
+              "start": {
+                "value": 30,
+                "unit": "pct"
+              },
+              "end": null
+            },
+            "angleDeg": null,
+            "followLE": false,
+            "width": {
+              "start": 9.524999999999999,
+              "end": null
+            },
+            "height": {
+              "start": 3.175,
+              "end": null
+            },
+            "autoAdjustWidth": false,
+            "realWidth": false,
+            "verticalCut": false,
+            "flat": false,
+            "radiusMm": null,
+            "offsetY": null,
+            "gapForeMm": 0,
+            "gapAftMm": 0,
+            "positionTop": true,
+            "positionBottom": true,
+            "webbing": null,
+            "aileron": null
+          }
+        ],
+        "buildingTabs": {
+          "enabled": false,
+          "above": false,
+          "below": true,
+          "fore": true,
+          "aft": true,
+          "holes": false,
+          "fromLE": {
+            "value": 5,
+            "unit": "mm"
+          },
+          "fromTE": {
+            "value": 45,
+            "unit": "mm"
+          },
+          "widthLE": 15,
+          "widthTE": 15,
+          "extendMm": 5.5,
+          "sidesMm": 2.5,
+          "endsMm": 2.5
+        },
+        "leadingEdge": {
+          "enabled": true,
+          "widthMm": 9.524999999999999,
+          "heightMm": 18,
+          "shape": "rectangle"
+        },
+        "trailingEdge": {
+          "enabled": true,
+          "widthMm": 25.4,
+          "heightMm": 12,
+          "shape": "triangle"
+        },
+        "sheeting": {
+          "type": "advanced",
+          "standardLength": null,
+          "standardThicknessMm": null,
+          "strips": [
+            {
+              "id": "21861a89-29fe-42c5-995b-911f3b34c1a9",
+              "name": "LE sheet top and bottom",
+              "color": "standard",
+              "spanStartMm": 0,
+              "spanEndMm": 614.68,
+              "startingAt": "LE",
+              "capStrip": false,
+              "distance": {
+                "start": {
+                  "value": 0,
+                  "unit": "pct"
+                },
+                "end": null
+              },
+              "length": {
+                "start": {
+                  "value": 32,
+                  "unit": "pct"
+                },
+                "end": null
+              },
+              "thicknessMm": 1.5875,
+              "applyAbove": true,
+              "applyBelow": true
+            }
+          ]
+        },
+        "ribCombs": [],
+        "lighteningHoles": {
+          "type": "none",
+          "minDistanceMm": 5,
+          "minDistanceFromLEMm": 5,
+          "minDistanceFromTEMm": 5,
+          "distanceFromEdgeMm": 2,
+          "minWidthMm": 10,
+          "maxWidthMm": 40,
+          "supportWidthMm": 4,
+          "roundCorners": true,
+          "roundnessPct": 20,
+          "smoothnessPoints": 4
+        }
+      },
+      {
+        "id": "41389d6a-09a5-4cf3-b711-37c576696161",
+        "name": "Mid panel",
+        "lengthMm": 309.87999999999994,
+        "rootChordMm": 251.46,
+        "tipChordMm": 208.27999999999997,
+        "sweepMm": 0,
+        "rootTwistDeg": 0,
+        "tipTwistDeg": 0,
+        "straightTE": false,
+        "dihedralDeg": 5.8,
+        "dihedralTipDeg": null,
+        "startAtMm": null,
+        "rootAirfoilId": "naca-2412",
+        "rootAirfoilScale": 1,
+        "tipAirfoilId": null,
+        "tipAirfoilScale": 1,
+        "airfoilLinkedToPrev": false,
+        "noseSmoothing": {
+          "enabled": false,
+          "extentPct": 8
+        },
+        "ribAlign": "none",
+        "ribThicknessMm": 1.5875,
+        "ribCountTarget": 5,
+        "ribsManuallyEdited": true,
+        "halfRibCutPct": 35,
+        "ribs": [
+          {
+            "id": "7454e480-f9b2-4b7e-9f68-3a2bc4862e85",
+            "positionMm": 77.47,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "6ca61988-ab3a-4f46-a450-dae79dcd6849",
+            "positionMm": 154.94,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "c13b26ff-511b-4859-8012-cd38ad65ff0c",
+            "positionMm": 232.41,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "db325a14-d769-4f62-9dc3-666e41a8dd44",
+            "positionMm": 309.88,
+            "thicknessMm": 1.5875,
+            "half": null
+          }
+        ],
+        "spars": [
+          {
+            "id": "4189d4a6-7f0a-4ff8-ba99-107e83b6feb9",
+            "name": "Spar (top and bottom)",
+            "type": "rectangle",
+            "color": "standard",
+            "spanStartMm": 0,
+            "spanEndMm": 309.87999999999994,
+            "distanceFrom": "LE",
+            "distance": {
+              "start": {
+                "value": 30,
+                "unit": "pct"
+              },
+              "end": null
+            },
+            "angleDeg": null,
+            "followLE": false,
+            "width": {
+              "start": 9.524999999999999,
+              "end": null
+            },
+            "height": {
+              "start": 3.175,
+              "end": null
+            },
+            "autoAdjustWidth": false,
+            "realWidth": false,
+            "verticalCut": false,
+            "flat": false,
+            "radiusMm": null,
+            "offsetY": null,
+            "gapForeMm": 0,
+            "gapAftMm": 0,
+            "positionTop": true,
+            "positionBottom": true,
+            "webbing": null,
+            "aileron": null
+          }
+        ],
+        "buildingTabs": {
+          "enabled": false,
+          "above": false,
+          "below": true,
+          "fore": true,
+          "aft": true,
+          "holes": false,
+          "fromLE": {
+            "value": 5,
+            "unit": "mm"
+          },
+          "fromTE": {
+            "value": 45,
+            "unit": "mm"
+          },
+          "widthLE": 15,
+          "widthTE": 15,
+          "extendMm": 5.5,
+          "sidesMm": 2.5,
+          "endsMm": 2.5
+        },
+        "leadingEdge": {
+          "enabled": true,
+          "widthMm": 9.524999999999999,
+          "heightMm": 18,
+          "shape": "rectangle"
+        },
+        "trailingEdge": {
+          "enabled": true,
+          "widthMm": 25.4,
+          "heightMm": 12,
+          "shape": "triangle"
+        },
+        "sheeting": {
+          "type": "advanced",
+          "standardLength": null,
+          "standardThicknessMm": null,
+          "strips": [
+            {
+              "id": "2e8111a0-4e12-4319-9a23-5856edf1771c",
+              "name": "LE sheet top and bottom",
+              "color": "standard",
+              "spanStartMm": 0,
+              "spanEndMm": 309.87999999999994,
+              "startingAt": "LE",
+              "capStrip": false,
+              "distance": {
+                "start": {
+                  "value": 0,
+                  "unit": "pct"
+                },
+                "end": null
+              },
+              "length": {
+                "start": {
+                  "value": 32,
+                  "unit": "pct"
+                },
+                "end": null
+              },
+              "thicknessMm": 1.5875,
+              "applyAbove": true,
+              "applyBelow": true
+            }
+          ]
+        },
+        "ribCombs": [],
+        "lighteningHoles": {
+          "type": "none",
+          "minDistanceMm": 5,
+          "minDistanceFromLEMm": 5,
+          "minDistanceFromTEMm": 5,
+          "distanceFromEdgeMm": 2,
+          "minWidthMm": 10,
+          "maxWidthMm": 40,
+          "supportWidthMm": 4,
+          "roundCorners": true,
+          "roundnessPct": 20,
+          "smoothnessPoints": 4
+        }
+      },
+      {
+        "id": "a2571756-1c8c-4da5-af87-7f2d638d772b",
+        "name": "Tip panel",
+        "lengthMm": 568.9599999999999,
+        "rootChordMm": 208.27999999999997,
+        "tipChordMm": 88.89999999999999,
+        "sweepMm": 50.8,
+        "rootTwistDeg": 0,
+        "tipTwistDeg": 0,
+        "straightTE": false,
+        "dihedralDeg": 5.8,
+        "dihedralTipDeg": null,
+        "startAtMm": null,
+        "rootAirfoilId": "naca-2412",
+        "rootAirfoilScale": 1,
+        "tipAirfoilId": null,
+        "tipAirfoilScale": 1,
+        "airfoilLinkedToPrev": false,
+        "noseSmoothing": {
+          "enabled": false,
+          "extentPct": 8
+        },
+        "ribAlign": "none",
+        "ribThicknessMm": 1.5875,
+        "ribCountTarget": 7,
+        "ribsManuallyEdited": true,
+        "halfRibCutPct": 35,
+        "ribs": [
+          {
+            "id": "e5b64370-6a74-4417-a60c-e00915d560e4",
+            "positionMm": 94.8267,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "cf85121f-310c-434b-aeef-72fc0a059eab",
+            "positionMm": 189.6533,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "43fd0f79-fba0-4f90-8b03-e01e1ed4f415",
+            "positionMm": 284.48,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "856323dc-3f0a-4489-85c0-8356a7b8636f",
+            "positionMm": 379.3067,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "766a9f86-68b2-46d0-accf-2ba35bb9b099",
+            "positionMm": 474.1333,
+            "thicknessMm": 1.5875,
+            "half": null
+          },
+          {
+            "id": "f7fe432f-5db9-4158-861d-523f27f2aa74",
+            "positionMm": 568.96,
+            "thicknessMm": 1.5875,
+            "half": null
+          }
+        ],
+        "spars": [
+          {
+            "id": "cb2016c5-f70a-4dea-8c50-f539fbcf9918",
+            "name": "Spar (top and bottom)",
+            "type": "rectangle",
+            "color": "standard",
+            "spanStartMm": 0,
+            "spanEndMm": 568.9599999999999,
+            "distanceFrom": "LE",
+            "distance": {
+              "start": {
+                "value": 30,
+                "unit": "pct"
+              },
+              "end": null
+            },
+            "angleDeg": null,
+            "followLE": false,
+            "width": {
+              "start": 9.524999999999999,
+              "end": null
+            },
+            "height": {
+              "start": 3.175,
+              "end": null
+            },
+            "autoAdjustWidth": false,
+            "realWidth": false,
+            "verticalCut": false,
+            "flat": false,
+            "radiusMm": null,
+            "offsetY": null,
+            "gapForeMm": 0,
+            "gapAftMm": 0,
+            "positionTop": true,
+            "positionBottom": true,
+            "webbing": null,
+            "aileron": null
+          }
+        ],
+        "buildingTabs": {
+          "enabled": false,
+          "above": false,
+          "below": true,
+          "fore": true,
+          "aft": true,
+          "holes": false,
+          "fromLE": {
+            "value": 5,
+            "unit": "mm"
+          },
+          "fromTE": {
+            "value": 45,
+            "unit": "mm"
+          },
+          "widthLE": 15,
+          "widthTE": 15,
+          "extendMm": 5.5,
+          "sidesMm": 2.5,
+          "endsMm": 2.5
+        },
+        "leadingEdge": {
+          "enabled": true,
+          "widthMm": 9.524999999999999,
+          "heightMm": 16.5,
+          "shape": "rectangle"
+        },
+        "trailingEdge": {
+          "enabled": true,
+          "widthMm": 25.4,
+          "heightMm": 11,
+          "shape": "triangle"
+        },
+        "sheeting": {
+          "type": "advanced",
+          "standardLength": null,
+          "standardThicknessMm": null,
+          "strips": [
+            {
+              "id": "e225358a-9deb-48b8-b9ac-4e42b6bf9e38",
+              "name": "LE sheet top and bottom",
+              "color": "standard",
+              "spanStartMm": 0,
+              "spanEndMm": 568.9599999999999,
+              "startingAt": "LE",
+              "capStrip": false,
+              "distance": {
+                "start": {
+                  "value": 0,
+                  "unit": "pct"
+                },
+                "end": null
+              },
+              "length": {
+                "start": {
+                  "value": 32,
+                  "unit": "pct"
+                },
+                "end": null
+              },
+              "thicknessMm": 1.5875,
+              "applyAbove": true,
+              "applyBelow": true
+            }
+          ]
+        },
+        "ribCombs": [],
+        "lighteningHoles": {
+          "type": "none",
+          "minDistanceMm": 5,
+          "minDistanceFromLEMm": 5,
+          "minDistanceFromTEMm": 5,
+          "distanceFromEdgeMm": 2,
+          "minWidthMm": 10,
+          "maxWidthMm": 40,
+          "supportWidthMm": 4,
+          "roundCorners": true,
+          "roundnessPct": 20,
+          "smoothnessPoints": 4
+        }
+      }
+    ],
+    "wingHalvesDistanceMm": 0
+  },
+  "airfoils": [],
+  "createdAt": "2026-10-08T18:15:18.749Z",
+  "updatedAt": "2026-10-08T18:15:18.749Z"
+}

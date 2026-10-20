@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wing Buddy</title>
+    <meta name="description" content="Design an RC wing in your browser and print 1:1 rib templates. Free, no account, nothing to install, your designs never leave your computer." />
+    <style>
+      :root {
+        --bg: #ffffff; --surface: #f3f5f7; --border: #d2d7dd;
+        --text: #14171c; --muted: #555d69;
+        --accent: #5a3fc4; --on-accent: #ffffff; --selected: #e7e1fa;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #16181c; --surface: #1d2025; --border: #333842;
+          --text: #e7eaee; --muted: #a3abb7;
+          --accent: #b4a3ff; --on-accent: #160e30; --selected: #33285f;
+        }
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+      .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+      header { padding: 20px 0; font-weight: 650; font-size: 18px; }
+      h1 { font-size: clamp(2rem, 5vw, 3.1rem); line-height: 1.12; margin: 24px 0 12px; max-width: 18ch; }
+      h2 { font-size: 1.5rem; margin: 0 0 16px; }
+      p { margin: 0 0 12px; }
+      .lede { font-size: 1.15rem; color: var(--muted); max-width: 52ch; }
+      .btn { display: inline-block; background: var(--accent); color: var(--on-accent); padding: 12px 22px; border-radius: 8px; font-weight: 600; text-decoration: none; margin-top: 8px; }
+      .btn:focus-visible, a:focus-visible { outline: 3px solid var(--text); outline-offset: 3px; }
+      .shot { width: 100%; height: auto; border: 1px solid var(--border); border-radius: 10px; margin-top: 36px; display: block; }
+      section { padding: 56px 0 0; }
+      .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+      .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; }
+      .card h3 { margin: 0 0 6px; font-size: 1.05rem; }
+      .card p { color: var(--muted); margin: 0; }
+      ol.steps { padding-left: 0; list-style: none; counter-reset: s; display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+      ol.steps li { counter-increment: s; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; }
+      ol.steps li::before { content: counter(s); display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--selected); font-weight: 700; margin-bottom: 8px; }
+      details { border-bottom: 1px solid var(--border); padding: 14px 0; }
+      summary { cursor: pointer; font-weight: 600; }
+      details p { color: var(--muted); margin: 8px 0 0; }
+      .cta { text-align: center; padding: 64px 0; }
+      footer { border-top: 1px solid var(--border); padding: 24px 0; color: var(--muted); font-size: 15px; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>Wing Buddy</header>
+      <main>
+        <h1>Design an RC wing and print the ribs, free.</h1>
+        <p class="lede">Define your wing panel by panel, watch it build in 3D, then export 1:1 rib templates as a PDF and cutting files as DXF. It runs in your browser: no account, no install, and your designs stay on your computer.</p>
+        <a class="btn" href="./index.html">Open Wing Buddy</a>
+        <img class="shot" src="./wing-buddy-screenshot.png" width="2880" height="1800" alt="Wing Buddy showing a two-panel trainer wing in 3D, with ribs in orange, spars in blue and the panel list on the left." />
+
+        <section aria-labelledby="problem">
+          <h2 id="problem">Wing design software shouldn't cost money to print</h2>
+          <div class="grid">
+            <div class="card"><h3>Paid before you can print</h3><p>Popular wing tools are desktop programs with a licence fee, and the print and export features are the part that stays locked until you pay.</p></div>
+            <div class="card"><h3>Tied to one computer</h3><p>A desktop install means your wing lives on one machine. Switch laptops and you start by finding the installer.</p></div>
+          </div>
+        </section>
+
+        <section aria-labelledby="how">
+          <h2 id="how">How it works</h2>
+          <ol class="steps">
+            <li><h3>Describe the wing</h3><p>Add panels. Set length, root and tip chord, sweep, dihedral, twist and airfoil for each.</p></li>
+            <li><h3>Check it in 3D</h3><p>Ribs, spars, webbing and edges build live. Turn parts on and off, and flip to the planform or summary.</p></li>
+            <li><h3>Print and cut</h3><p>Export rib templates as a 1:1 PDF, or a DXF for your cutter. Both are in real units.</p></li>
+          </ol>
+        </section>
+
+        <section aria-labelledby="features">
+          <h2 id="features">What you get</h2>
+          <div class="grid">
+            <div class="card"><h3>Free, with nothing locked</h3><p>PDF and DXF export work from the first minute. No trial, no key.</p></div>
+            <div class="card"><h3>Private by design</h3><p>There is no server. Your project is kept in your browser and in files you save yourself.</p></div>
+            <div class="card"><h3>Open it anywhere</h3><p>Any modern browser, any computer. Move a project between machines as a single file.</p></div>
+            <div class="card"><h3>Millimetres or inches</h3><p>Switch the display at any time. Exports stay in millimetres, so nothing shifts.</p></div>
+            <div class="card"><h3>Ribs, spars and tabs</h3><p>Round, rectangular and joiner spars with webbing, building tabs, edge stock and your own airfoils from .dat files.</p></div>
+            <div class="card"><h3>Undo that works</h3><p>Undo and redo for your edits, and a confirmation before a project is replaced.</p></div>
+          </div>
+        </section>
+
+        <section aria-labelledby="faq">
+          <h2 id="faq">Questions</h2>
+          <details><summary>Does it cost anything?</summary><p>No. There is no paid tier.</p></details>
+          <details><summary>Where are my designs stored?</summary><p>In your browser's storage on your computer, and in project files you export. Nothing is sent anywhere.</p></details>
+          <details><summary>Can I bring my own airfoils?</summary><p>Yes. Import a .dat file and it is saved inside the project, so it travels with it. A starter set of NACA 4-digit airfoils is built in.</p></details>
+          <details><summary>Can I open projects from other wing tools?</summary><p>Not yet. Wing Buddy reads and writes its own project file.</p></details>
+          <details><summary>What is not here yet?</summary><p>Sheeting, rib combs, lightening holes, CNC and hot-wire exports and the airfoil designer are not built. Wing Buddy covers the core loop: panels, ribs, spars, 3D, PDF and DXF.</p></details>
+        </section>
+
+        <section class="cta" aria-labelledby="go">
+          <h2 id="go">Start your wing</h2>
+          <a class="btn" href="./index.html">Open Wing Buddy</a>
+        </section>
+      </main>
+      <footer>Wing Buddy. Not affiliated with any other wing design software.</footer>
+    </div>
+  </body>
+</html>
