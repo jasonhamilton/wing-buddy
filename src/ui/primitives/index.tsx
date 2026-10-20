@@ -17,6 +17,7 @@ import {
   type InputHTMLAttributes,
   type ReactNode,
 } from "react";
+import { createPortal } from "react-dom";
 import { parseNumber } from "../../domain/units";
 
 const cx = (...parts: (string | false | null | undefined)[]) => parts.filter(Boolean).join(" ");
@@ -556,7 +557,8 @@ export function Dialog({
     };
   }, []);
 
-  return (
+  // In the body, so no ancestor's stacking context or pointer-events setting can sit over or switch off the dialog.
+  return createPortal(
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/35 p-4" onMouseDown={(e) => e.target === e.currentTarget && onClose()}>
       <div
         ref={ref}
@@ -579,7 +581,8 @@ export function Dialog({
         <div className="min-h-0 flex-1 overflow-auto">{children}</div>
         {footer && <footer className="flex justify-end gap-4 border-t border-border bg-surface px-6 py-4">{footer}</footer>}
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }
 
