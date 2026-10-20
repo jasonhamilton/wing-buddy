@@ -2,7 +2,7 @@
 
 Design an RC model aircraft wing in your browser, watch it build in 3D, and export 1:1 rib templates (PDF) and cutting files (DXF). Free, no account, nothing to install, and your designs never leave your computer.
 
-**[Open Wing Buddy](https://jasonhamiton.github.io/wing-buddy/)** · **[Download a build](https://github.com/jasonhamiton/wing-buddy/releases/latest)** · [Landing page](https://jasonhamiton.github.io/wing-buddy/landing.html)
+**[Open Wing Buddy](https://jasonhamilton.github.io/wing-buddy/)** · **[Download a build](https://github.com/jasonhamilton/wing-buddy/releases/latest)** · [Landing page](https://jasonhamilton.github.io/wing-buddy/landing.html)
 
 ![Wing Buddy showing a two-panel wing in 3D, with ribs in orange, spars in blue and the panel list on the left](docs/screenshots/01-overview.png)
 
@@ -57,7 +57,7 @@ Each panel opens into a dialog with a live rib preview. Ribs, spars, edges, shee
 
 ## Run it
 
-Use the hosted version at **https://jasonhamiton.github.io/wing-buddy/**, or download the latest build from the [Releases page](https://github.com/jasonhamiton/wing-buddy/releases/latest), unzip it and serve the folder with any static web server (for example `npx serve`).
+Use the hosted version at **https://jasonhamilton.github.io/wing-buddy/**, or download the latest build from the [Releases page](https://github.com/jasonhamilton/wing-buddy/releases/latest), unzip it and serve the folder with any static web server (for example `npx serve`).
 
 To work on the code:
 
